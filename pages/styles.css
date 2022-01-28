@@ -65,6 +65,21 @@
     display: none;
   }
 }
+.header__burger {
+  display: none;
+  align-self: center;
+  width: 32px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1350px) {
+  .header__burger {
+    display: block;
+  }
+}
 .course {
   background-color: #fff;
   display: grid;
@@ -369,13 +384,13 @@
   }
 }
 @media screen and (max-width: 1350px) {
-  .camera__picture {
+  .camera__img {
     max-width: 688px;
     margin: 60px 0 0 0;
   }
 }
 @media screen and (max-width: 745px) {
-  .camera__picture {
+  .camera__img {
     width: 280px;
     max-height: 268px;
   }
@@ -706,7 +721,7 @@
   width: 39px;
   height: 39px;
   background-color: transparent;
-  background-image: url(../../../images/burger.png);
+  background-image: url(../../images/Group10.svg);
   background-size: cover;
   border: none;
   cursor: pointer;
