@@ -1,0 +1,27 @@
+$red: #DF2626;
+$yellow: #FFCE00;
+$black: #000;
+$white: #fff;
+$font:"Roboto", "Arial", sans-serif;
+$width: 1440px;
+$fontTitle:18px;
+$widthMobile: 767px;
+$widthTablet: 1280px;
+
+@mixin link-menu {
+  cursor: pointer;
+  text-decoration: none; 
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: normal;
+  color: $white;
+}
+
+@mixin title {
+  font-size: $fontTitle;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  line-height: 28px;
+  font-weight: normal;
+}
