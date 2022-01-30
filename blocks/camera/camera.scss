@@ -1,8 +1,8 @@
 .camera {
-  display: grid;
-  grid-template-areas: "title img" "subtitle img" "text img" "reviews reviews";
   background-color: $black;
   color: $white;
+  display: grid;
+  grid-template-areas: "title img" "subtitle img" "text img" "reviews reviews";
   padding: 50px;
   grid-template-rows: 78px auto;
     @media screen and (max-width: $widthTablet) {
@@ -81,7 +81,7 @@
         @media screen and (max-width: $widthTablet) {
           max-width: 688px;
           max-height: 656px;
-          margin: 60px 0 0 0;
+          margin: 60px 0 0;
         }
         @media screen and (max-width: $widthMobile) {
           width: 280px;
@@ -103,7 +103,7 @@
       line-height: 24px;
       font-size: 15px;
       font-weight: normal;
-      margin: 10px 0 0 0;
+      margin: 10px 0 0;
         @media screen and (max-width: $widthMobile) {
           line-height: 12px;
           font-size: 12px;

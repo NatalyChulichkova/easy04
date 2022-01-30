@@ -10,7 +10,7 @@
       grid-template-areas: "title" "subtitle" "pic" "text" "button";
     }
     @media screen and (max-width: $widthMobile) {
-      padding: 40px 20px 20px 20px;
+      padding: 40px 20px 20px;
     }
     &__title {
       grid-area: title;
@@ -28,9 +28,9 @@
       font-size: 64px;
       font-weight: normal;
       max-width: 549px;
-      margin: 50px 0 106px 0;
+      margin: 50px 0 106px;
         @media screen and (max-width: $widthTablet) {
-          margin: 40px 0 0 0;
+          margin: 40px 0 0;
         }
         @media screen and (max-width: $widthMobile) {
           line-height: 38px;
