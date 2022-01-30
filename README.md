@@ -1,13 +1,14 @@
-# Проектная работа №2: Место
+# Проектная работа: Month-of-Landings - Easy04
 
-* [Ссылка на проект](https://natalychulichkova.github.io/mesto-project/index.html)
+* [Ссылка на проект](https://natalychulichkova.github.io/easy04/index.html)
 
 ## Описание проекта
-Одностраничный адаптипный сайт, на котором можно делиться фотографиями из путешествий
+Одностраничный адаптипный сайт о курсах по фотографии
 
 ## Технологии и подходы
 * HTML5
 * CSS3
+* SCSS
 * методология БЭМ
 * Figma
 * Формы
@@ -15,4 +16,4 @@
 
 
 **Figma**
-* [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+* [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=6%3A2)
