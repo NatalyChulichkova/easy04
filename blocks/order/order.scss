@@ -48,18 +48,20 @@
       margin: 0;
       padding-top: 24px;
         @media screen and (max-width: $widthTablet) {
-          padding-top: 60px;
+          padding-top: 90px;
         }
         @media screen and (max-width: $widthMobile) {
           line-height: 18px;
           font-size: 14px;
           max-width: 280px;
+          padding-top: 60px;
         }
     }
     &__img {
       grid-area: pic;
         @media screen and (max-width: $widthTablet) {
           max-width: 688px;
+          max-height: 360px;
           margin-top: 60px;
         }
         @media screen and (max-width: $widthMobile) {
@@ -68,5 +70,12 @@
     }
     &__link {
       grid-area: button;
+      margin-top: 148px;
+        @media screen and (max-width: $widthTablet) {
+          margin-top: 60px;
+        }
+        @media screen and (max-width: $widthMobile) {
+          margin-top: 30px;
+        }
     }
 }
