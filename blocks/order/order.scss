@@ -1,0 +1,81 @@
+.order {
+  background-color: $white;
+  display: grid;
+  grid-template-areas: "title ." "subtitle ." "pic text" "pic button";
+  grid-template-columns: max-content;
+  gap: 0 312px;
+  padding: 50px;
+    @media screen and (max-width: $widthTablet) {
+      padding: 40px;
+      grid-template-areas: "title" "subtitle" "pic" "text" "button";
+    }
+    @media screen and (max-width: $widthMobile) {
+      padding: 40px 20px 20px;
+    }
+    &__title {
+      grid-area: title;
+      @include title;
+        @media screen and (max-width: $widthMobile) {
+          line-height: 20px;
+          font-size: 14px;
+          padding-top: 20px;
+          border-top: 1px solid $black;
+        }
+    }
+    &__subtitle {
+      grid-area: subtitle;
+      line-height: 64px;
+      font-size: 64px;
+      font-weight: normal;
+      max-width: 549px;
+      margin: 50px 0 106px;
+        @media screen and (max-width: $widthTablet) {
+          margin: 40px 0 0;
+        }
+        @media screen and (max-width: $widthMobile) {
+          line-height: 38px;
+          font-size: 32px;
+          max-width: 280px;
+          margin-top: 30px;
+        }
+    }
+    &__text {
+      grid-area: text;
+      max-width: 380px;
+      line-height: 28px;
+      font-size: 18px;
+      font-weight: normal;
+      margin: 0;
+      padding-top: 24px;
+        @media screen and (max-width: $widthTablet) {
+          padding-top: 60px;
+        }
+        @media screen and (max-width: $widthMobile) {
+          line-height: 18px;
+          font-size: 14px;
+          max-width: 280px;
+        }
+    }
+    &__img {
+      grid-area: pic;
+        @media screen and (max-width: $widthTablet) {
+          width: 688px;
+          height: 360px;
+          margin-top: 60px;
+        }
+        @media screen and (max-width: $widthMobile) {
+          width: 280px;
+          height: 147px;
+        }
+    }
+    &__link {
+      grid-area: button;
+      margin-top: 148px;
+        @media screen and (max-width: $widthTablet) {
+          margin-top: 60px;
+        }
+        @media screen and (max-width: $widthMobile) {
+          margin-top: 30px;
+        }
+    }
+}

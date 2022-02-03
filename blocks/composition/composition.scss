@@ -1,0 +1,128 @@
+.composition {
+  background-color: $yellow;
+  display: grid;
+  grid-template-areas: "title img" "subtitle img" "text img" "text img" "button img" "table table";
+  padding: 50px;
+    @media screen and (max-width: $widthTablet) {
+      grid-template-areas: "title" "subtitle" "img" "text" "button" "table";
+      padding: 40px;
+    }
+    @media screen and (max-width: $widthMobile) {
+      padding: 40px 20px 20px;
+    }
+    &__title {
+      grid-area: title;
+      @include title;
+        @media screen and (max-width: $widthMobile) {
+          line-height: 20px;
+          font-size: 14px;
+          padding-top: 20px;
+          border-top: 1px solid $black;
+        }
+    }
+    &__subtitle {
+      grid-area: subtitle;
+      line-height: 64px;
+      font-size: 64px;
+      font-weight: normal;
+      max-width: 403px;
+      margin: 50px 0 0;
+        @media screen and (max-width: $widthMobile) {
+          max-width: 280px;
+          line-height: 38px;
+          font-size: 30px;
+          margin: 30px 0 0;
+        }
+    }
+    &__text-block {
+      grid-area: text;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 100px 0 0;
+        @media screen and (max-width: $widthTablet) {
+          margin-top: 60px
+        }
+        @media screen and (max-width: $widthMobile) {
+          gap: 36px;
+        }
+    }
+    &__text {
+      line-height: 28px;
+      font-size: 18px;
+      font-weight: normal;
+      padding: 0;
+      margin: 0;
+        @media screen and (max-width: $widthMobile) {
+          line-height: 18px;
+          font-size: 14px;
+        }
+    }
+    &__link {
+      background-color: $white;
+      margin-top: 200px;
+        @media screen and (max-width: $widthTablet) {
+          margin-top: 60px;
+        }
+        @media screen and (max-width: $widthMobile) {
+          margin-top: 30px;
+        }
+    }
+    &__img {
+      grid-area: img;
+      margin-left: auto;
+        @media screen and (max-width: $widthTablet) {
+          margin: 50px 0 0;
+          width: 688px;
+          height: 685px;
+        }
+        @media screen and (max-width: $widthMobile) {
+          width: 280px;
+          height: 278px;
+        }
+    }
+    &__table {
+      grid-area: table;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 56px;
+      padding: 0;
+      margin: 100px 0 0;
+        @media screen and (max-width: $widthTablet) {
+          flex-direction: column;
+          max-width: 688px;
+          gap: 0;
+          margin-top: 40px;
+        }
+        @media screen and (max-width: $widthMobile) {
+          margin-top: 80px;
+        }
+    }
+    &__table-cell {
+      max-width: 291px;
+      line-height: 28px;
+      font-size: 18px;
+      font-weight: normal;
+      margin: 0;
+        @media screen and (max-width: $widthTablet) {
+          max-width: 688px;
+          padding: 30px 0 30px;
+          border-bottom: 1px solid $black;
+        }
+        @media screen and (max-width: $widthMobile) {
+          max-width: 278px;
+          line-height: 18px;
+          font-size: 14px;
+          padding: 14px 0 14px;
+        }
+    }
+    &__table-cell:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    &__text-bold {
+      font-weight: bold;
+    }
+}
