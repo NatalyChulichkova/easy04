@@ -75,6 +75,27 @@
 .form__input:focus {
   outline: none;
 }
+.form__input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.375px;
+  color: #000;
+  padding-left: 20px;
+}
+.form__input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.375px;
+  color: #000;
+  padding-left: 20px;
+}
+.form__input::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.375px;
+  color: #000;
+  padding-left: 20px;
+}
 .form__btn {
   line-height: 28px;
   font-size: 14px;
@@ -232,11 +253,15 @@
   max-width: 469px;
   margin: 40px 0 0;
 }
+@media screen and (max-width: 1280px) {
+  .course__text {
+    margin-top: 60px;
+  }
+}
 @media screen and (max-width: 767px) {
   .course__text {
     line-height: 18px;
     font-size: 14px;
-    margin-top: 60px;
   }
 }
 .course__img {
@@ -246,13 +271,14 @@
 @media screen and (max-width: 1280px) {
   .course__img {
     margin: 60px 0 0;
-    max-width: 688px;
-    max-height: 594px;
+    width: 688px;
+    height: 594px;
   }
 }
 @media screen and (max-width: 767px) {
   .course__img {
-    max-width: 280px;
+    width: 280px;
+    height: 242px;
   }
 }
 .course__link {
@@ -260,7 +286,7 @@
 }
 @media screen and (max-width: 1280px) {
   .course__link {
-    margin-top: 0px 0 0;
+    margin-top: 60px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -370,14 +396,15 @@
 }
 @media screen and (max-width: 1280px) {
   .composition__img {
-    margin: 60px 0 0;
-    max-width: 688px;
+    margin: 50px 0 0;
+    width: 688px;
+    height: 685px;
   }
 }
 @media screen and (max-width: 767px) {
   .composition__img {
-    max-width: 280px;
-    max-height: 278px;
+    width: 280px;
+    height: 278px;
   }
 }
 .composition__table {
@@ -387,7 +414,7 @@
   list-style: none;
   gap: 56px;
   padding: 0;
-  margin-top: 100px;
+  margin: 100px 0 0;
 }
 @media screen and (max-width: 1280px) {
   .composition__table {
@@ -446,7 +473,7 @@
 }
 @media screen and (max-width: 767px) {
   .camera {
-    padding: 20px;
+    padding: 40px 20px 20px;
   }
 }
 .camera__title {
@@ -477,7 +504,7 @@
 @media screen and (max-width: 767px) {
   .camera__subtitle {
     max-width: 243px;
-    line-height: 50px;
+    line-height: 56px;
     font-size: 48px;
   }
 }
@@ -536,15 +563,15 @@
 }
 @media screen and (max-width: 1280px) {
   .camera__img {
-    max-width: 688px;
-    max-height: 656px;
+    width: 688px;
+    height: 656px;
     margin: 60px 0 0;
   }
 }
 @media screen and (max-width: 767px) {
   .camera__img {
     width: 280px;
-    max-height: 268px;
+    height: 268px;
   }
 }
 .camera__name {
@@ -555,8 +582,8 @@
 }
 @media screen and (max-width: 767px) {
   .camera__name {
-    line-height: 12px;
-    font-size: 12px;
+    line-height: 20px;
+    font-size: 14px;
     margin: 30px 0 0;
   }
 }
@@ -668,7 +695,7 @@
 }
 @media screen and (max-width: 1280px) {
   .order__text {
-    padding-top: 90px;
+    padding-top: 60px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -676,7 +703,6 @@
     line-height: 18px;
     font-size: 14px;
     max-width: 280px;
-    padding-top: 60px;
   }
 }
 .order__img {
@@ -684,14 +710,15 @@
 }
 @media screen and (max-width: 1280px) {
   .order__img {
-    max-width: 688px;
-    max-height: 360px;
+    width: 688px;
+    height: 360px;
     margin-top: 60px;
   }
 }
 @media screen and (max-width: 767px) {
   .order__img {
-    max-width: 280px;
+    width: 280px;
+    height: 147px;
   }
 }
 .order__link {

@@ -26,6 +26,13 @@
     &__input:focus {
       outline: none;
     }   
+    &__input::placeholder {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.375px;
+      color: $black;
+      padding-left: 20px;
+    }
     &__btn {
       line-height: 28px;
       font-size: 14px;

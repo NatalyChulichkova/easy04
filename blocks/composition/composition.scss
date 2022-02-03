@@ -73,12 +73,13 @@
       grid-area: img;
       margin-left: auto;
         @media screen and (max-width: $widthTablet) {
-          margin: 60px 0 0;
-          max-width: 688px;
+          margin: 50px 0 0;
+          width: 688px;
+          height: 685px;
         }
         @media screen and (max-width: $widthMobile) {
-          max-width: 280px;
-          max-height: 278px;
+          width: 280px;
+          height: 278px;
         }
     }
     &__table {
@@ -88,7 +89,7 @@
       list-style: none;
       gap: 56px;
       padding: 0;
-      margin-top: 100px;
+      margin: 100px 0 0;
         @media screen and (max-width: $widthTablet) {
           flex-direction: column;
           max-width: 688px;
