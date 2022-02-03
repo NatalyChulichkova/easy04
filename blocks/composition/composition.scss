@@ -101,15 +101,18 @@
         }
     }
     &__table-cell {
+      max-width: 291px;
       line-height: 28px;
       font-size: 18px;
       font-weight: normal;
       margin: 0;
         @media screen and (max-width: $widthTablet) {
+          max-width: 688px;
           padding: 30px 0 30px;
           border-bottom: 1px solid $black;
         }
         @media screen and (max-width: $widthMobile) {
+          max-width: 278px;
           line-height: 18px;
           font-size: 14px;
           padding: 14px 0 14px;
